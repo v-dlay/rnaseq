@@ -1,0 +1,12 @@
+{
+  "registryMappings": [
+    {
+      "upstreamRegistryUrl": "quay.io",
+      "ecrRepositoryPrefix": "quay"
+    },
+    {
+      "upstreamRegistryUrl": "community.wave.seqera.io",
+      "ecrRepositoryPrefix": "community"
+    }
+  ]
+}

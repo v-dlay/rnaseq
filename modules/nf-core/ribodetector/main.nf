@@ -5,7 +5,7 @@ process RIBODETECTOR {
 	conda "${moduleDir}/environment.yml"
 	container "${ workflow.containerEngine == 'singularity' && !task.ext.singularity_pull_docker_container ?
         'https://community-cr-prod.seqera.io/docker/registry/v2/blobs/sha256/46/463b8ad941e7f1f2decef20844d666c1c8ac233e166d2bc766164c4a93905a3c/data' :
-        'community.wave.seqera.io/library/ribodetector:0.3.3--ad3d7071e408b502' }"
+        '639879951631.dkr.ecr.us-east-1.amazonaws.com/community/library/ribodetector:0.3.3--ad3d7071e408b502' }"
 
 	input:
 	tuple val(meta), path(fastq)

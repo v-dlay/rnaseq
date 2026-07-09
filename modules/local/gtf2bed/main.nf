@@ -5,7 +5,7 @@ process GTF2BED {
     conda "${moduleDir}/environment.yml"
     container "${ workflow.containerEngine == 'singularity' && !task.ext.singularity_pull_docker_container ?
         'https://depot.galaxyproject.org/singularity/perl:5.26.2' :
-        'biocontainers/perl:5.26.2' }"
+        '639879951631.dkr.ecr.us-east-1.amazonaws.com/quay/biocontainers/perl:5.26.2' }"
 
     input:
     path gtf

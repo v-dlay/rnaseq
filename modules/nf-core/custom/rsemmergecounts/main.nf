@@ -5,7 +5,7 @@ process CUSTOM_RSEMMERGECOUNTS {
     conda "${moduleDir}/environment.yml"
     container "${ workflow.containerEngine == 'singularity' && !task.ext.singularity_pull_docker_container ?
         'https://depot.galaxyproject.org/singularity/ubuntu:20.04' :
-        'nf-core/ubuntu:20.04' }"
+        '639879951631.dkr.ecr.us-east-1.amazonaws.com/quay/nf-core/ubuntu:20.04' }"
 
     input:
     tuple val(meta), path ('genes/*')

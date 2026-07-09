@@ -5,7 +5,7 @@ process RUSTQC {
     conda "${moduleDir}/environment.yml"
     container "${workflow.containerEngine == 'singularity' && !task.ext.singularity_pull_docker_container
         ? 'https://community-cr-prod.seqera.io/docker/registry/v2/blobs/sha256/2a/2a8a0514855c54307399fd0f664c2685e76c8cc07631e767c1e37c575b18d59f/data'
-        : 'community.wave.seqera.io/library/rustqc:0.2.1--00df1502b490e005'}"
+        : '639879951631.dkr.ecr.us-east-1.amazonaws.com/community/library/rustqc:0.2.1--00df1502b490e005'}"
 
     input:
     tuple val(meta), path(bam), path(bai)

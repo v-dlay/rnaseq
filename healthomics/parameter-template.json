@@ -1,0 +1,15 @@
+{
+  "input":              { "description": "S3 URI of the samplesheet CSV",                 "optional": false },
+  "fasta":              { "description": "Reference genome FASTA (S3 URI)",                "optional": true },
+  "gtf":                { "description": "Gene annotation GTF (S3 URI)",                   "optional": true },
+  "gff":                { "description": "Gene annotation GFF (S3 URI)",                   "optional": true },
+  "transcript_fasta":   { "description": "Transcriptome FASTA (S3 URI)",                   "optional": true },
+  "additional_fasta":   { "description": "Additional FASTA to concat (S3 URI)",           "optional": true },
+  "bbsplit_fasta_list": { "description": "BBSplit fasta list TSV (S3 URI)",               "optional": true },
+  "hisat2_index":       { "description": "HISAT2 index tarball (S3 URI)",                 "optional": true },
+  "salmon_index":       { "description": "Salmon index tarball (S3 URI)",                 "optional": true },
+  "kraken_db":          { "description": "Kraken2 DB tarball (S3 URI)",                    "optional": true },
+  "skip_bbsplit":       { "description": "Skip BBSplit contaminant removal",              "optional": true },
+  "pseudo_aligner":     { "description": "Pseudo-aligner (salmon/kallisto)",              "optional": true },
+  "umitools_bc_pattern":{ "description": "UMI-tools barcode pattern",                     "optional": true }
+}

@@ -5,7 +5,7 @@ process QUALIMAP_RNASEQ {
     conda "${moduleDir}/environment.yml"
     container "${ workflow.containerEngine == 'singularity' && !task.ext.singularity_pull_docker_container ?
         'https://depot.galaxyproject.org/singularity/qualimap:2.3--hdfd78af_0' :
-        'biocontainers/qualimap:2.3--hdfd78af_0' }"
+        '639879951631.dkr.ecr.us-east-1.amazonaws.com/quay/biocontainers/qualimap:2.3--hdfd78af_0' }"
 
     input:
     tuple val(meta), path(bam)

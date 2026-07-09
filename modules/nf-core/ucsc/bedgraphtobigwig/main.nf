@@ -5,7 +5,7 @@ process UCSC_BEDGRAPHTOBIGWIG {
     conda "${moduleDir}/environment.yml"
     container "${ workflow.containerEngine == 'singularity' && !task.ext.singularity_pull_docker_container ?
         'https://depot.galaxyproject.org/singularity/ucsc-bedgraphtobigwig:469--h9b8f530_0' :
-        'biocontainers/ucsc-bedgraphtobigwig:469--h9b8f530_0' }"
+        '639879951631.dkr.ecr.us-east-1.amazonaws.com/quay/biocontainers/ucsc-bedgraphtobigwig:469--h9b8f530_0' }"
 
     input:
     tuple val(meta), path(bedgraph)
