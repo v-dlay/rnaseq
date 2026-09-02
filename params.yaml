@@ -1,0 +1,18 @@
+input: 's3://v0-saas-dev-us-east-1-workbench/nextflow_resources-bugbash-nextflowonaws/rnaseq_test_data/samplesheet_test_s3.csv'
+
+fasta: 's3://v0-saas-dev-us-east-1-workbench/nextflow_resources-bugbash-nextflowonaws/rnaseq_test_data/genome.fasta'
+gtf: 's3://v0-saas-dev-us-east-1-workbench/nextflow_resources-bugbash-nextflowonaws/rnaseq_test_data/genes_with_empty_tid.gtf.gz'
+gff: 's3://v0-saas-dev-us-east-1-workbench/nextflow_resources-bugbash-nextflowonaws/rnaseq_test_data/genes.gff.gz'
+transcript_fasta: 's3://v0-saas-dev-us-east-1-workbench/nextflow_resources-bugbash-nextflowonaws/rnaseq_test_data/transcriptome.fasta'
+additional_fasta: 's3://v0-saas-dev-us-east-1-workbench/nextflow_resources-bugbash-nextflowonaws/rnaseq_test_data/gfp.fa.gz'
+
+bbsplit_fasta_list: 's3://v0-saas-dev-us-east-1-workbench/nextflow_resources-bugbash-nextflowonaws/rnaseq_test_data/bbsplit_fasta_list_s3.txt'
+hisat2_index: 's3://v0-saas-dev-us-east-1-workbench/nextflow_resources-bugbash-nextflowonaws/rnaseq_test_data/hisat2.tar.gz'
+salmon_index: 's3://v0-saas-dev-us-east-1-workbench/nextflow_resources-bugbash-nextflowonaws/rnaseq_test_data/salmon.tar.gz'
+kraken_db: 's3://v0-saas-dev-us-east-1-workbench/nextflow_resources-bugbash-nextflowonaws/rnaseq_test_data/kraken2.tar.gz'
+
+skip_bbsplit: false
+pseudo_aligner: 'salmon'
+umitools_bc_pattern: 'NNNN'
+
+outdir: '/mnt/workflow/pubdir'
